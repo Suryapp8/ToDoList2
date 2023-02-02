@@ -1,0 +1,85 @@
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+    text-align: center;
+}
+
+.description{
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+}
+
+.description > textarea{
+    width: 80%;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.category{
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-bottom: 1px solid black;
+font-family: 'Courier New', Courier, monospace;
+color: grey;
+}
+.button{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: white;
+}
+.add{
+    background-color: brown;
+
+    
+}
+.delete{
+    background-color: red;
+    height: 35px;
+    width: 130px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+
+
+.floatLeft{
+    background-color: blue;
+    width: 120px;
+
+    color: white;
+    text-align: center;
+    color: white;
+    padding-top: 2px ;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

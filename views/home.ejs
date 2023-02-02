@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+ 
+    <title><%= title %></title>
+    <link  rel="stylesheet" href="/home.css" >
+</head>
+<body>
+    <h1>TODO App </h1>
+    <form action="/contact" method="POST">
+    <div class="description"><h3>DESCRIPTION</h3>
+        <textarea name="description" placeholder="What do you need to do" required></textarea>
+    </div>
+    <div class="category">
+        <h3>CATEGORY</h3>
+        <select name="category">
+            <option>Personal</option>
+            <option>Work</option>
+            <option>School</option>
+            <option>Cleaning</option>
+            <option>Other</option>
+        </select>
+        <h3>DUE DATE</h3>
+        <input type="date"  name="date" required >
+    </div>
+    <div class="button">
+        <button class="add" type="submit"> + ADD TASK</button>
+        
+    </div>
+    <h1>List</h1>
+    <ul class="ul">
+        <% for(i of contactList){ %>
+          <li class="list">
+            <p><%= i.description %></p>
+            <p><%= i.date %></p>
+            <div class="floatLeft">
+                <p class = "side-box"><%= i.category %></p>
+            </div>
+            <a class="delete" href= "/delete/?id=<%= i._id %>" >  <i class="fa-solid fa-trash"></i> DELETE TASK</a>
+            
+          </li>
+
+        <%}%>
+    </ul>
+    
+
+</form>
+    <script src="https://kit.fontawesome.com/55f34a4ec9.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="home.js"></script>
+</body>
+</html>
